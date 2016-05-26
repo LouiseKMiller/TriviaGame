@@ -1,0 +1,99 @@
+/*style sheet for homework 5*/
+/*TriviaGame Assignment 5 - Louise K Miller*/
+*,
+ *:before,
+ *:after {
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+ }
+
+
+
+ .container {
+ 	margin: 0 auto;
+ 	width: 100%;
+ 	max-width: 1400px;
+	padding: 20px 50px;
+
+
+
+}
+.skyline {
+	background-image: url(..//images/austinSkyline.jpg);
+	background-size: 100% 200px;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+.main {
+	height: 300px;
+	background-color: #000;
+	border: 2px solid red;
+	color: white;
+}
+
+h1 {
+	height: 60px;
+}
+
+/*===================================================
+Timer
+===================================================
+*/
+
+#timer {
+  background: white;
+  color:green;
+  font-size: 60px;
+  font-family: monospace;
+  text-align: center;
+}
+
+/*===================================================
+Timer
+===================================================
+*/
+p {
+	font-size: 20px;
+	margin-bottom: 6px;
+}
+
+
+
+/*===================================================
+Sticky Footer
+===================================================
+*/
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+	background-color: #314993;
+}
+
+.page-wrap {
+	min-height: 100%;
+	/* equal to footer height */
+	margin-bottom: -20px;
+}
+
+
+.page-wrap:after {
+	content: "";
+	display: block;
+}
+
+.site-footer, .page-wrap:after {
+	height: 20px;
+}
+
+.site-footer {
+
+	line-height: 20px;
+	font-size: 13px;
+	text-align: center;
+
+}
