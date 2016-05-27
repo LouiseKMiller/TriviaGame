@@ -15,10 +15,8 @@
  	width: 100%;
  	max-width: 1400px;
 	padding: 20px 50px;
-
-
-
 }
+
 .skyline {
 	background-image: url(..//images/austinSkyline.jpg);
 	background-size: 100% 200px;
@@ -51,13 +49,18 @@ Timer
 }
 
 /*===================================================
-Timer
+Typography and Buttons
 ===================================================
 */
 p {
-	font-size: 20px;
+	font-size: 30px;
 	margin-bottom: 6px;
 }
+
+h2, .answers {
+	display: block;
+	font-size: 25px;
+};
 
 
 
