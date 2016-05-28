@@ -71,8 +71,10 @@ function countRound(){
  }
 
 function startDelayTimer(){
-  resetTimer(10);
+  resetTimer(7);
   $('.answers').prop('disabled', true);
+  $('.answers').removeClass('makeFade'); // remove hover
+
   counter = setInterval(countDelay, 1000);
 }
 
@@ -114,12 +116,14 @@ function startRound(){
 // populate screen with current round question and answers
 	var p=$('<p>');
 	p.addClass('question'); // Add question class 
+
 	p.text(game[round].question); // Add question text
 	$('#questionDiv').append(p); // Added the paragraph to the HTML
 
 	for (var i=0; i<game[round].possibleAnswers.length; i++) {
 		var b=$('<button>');
 		b.addClass('answers'); // Added a class 
+		b.addClass('makeFade'); // Added class for hover attribute
 		b.attr('data', [i]); // Added a data-attribute
 		b.text(game[round].possibleAnswers[i]); // Add possible answer
 		$('#answersDiv').append(b); // Added the paragraph to the HTML
@@ -156,12 +160,12 @@ function respondWithResult () {
 	var choice = $(this).attr('data');
 	if (choice == game[round].correctAnswer) {
 		wins++;
-		$('#resultDiv').html("Correct!");
+		$('#resultDiv').html("<h3>Correct!</h3>");
 		$('#resultDiv').append("<p>" + game[round].explanation) + "</p>";
 		}
 	else {
 		losses++;
-		$('#resultDiv').html("wrong answer");
+		$('#resultDiv').html("<h3>Oops! Wrong Answer</h3>");
 		$('#resultDiv').append("<h3>The correct answer was: " + game[round].possibleAnswers[game[round].correctAnswer]);
 		$('#resultDiv').append("<p>" + game[round].explanation) + "</p>";
 		};
@@ -177,7 +181,8 @@ function respondWithResult () {
 function showFinalResult(){
 	$('#questionDiv').empty();
 	$('#answersDiv').empty();
-	$('#resultDiv').html("Game Over");
+	$('#timer').empty();
+	$('#resultDiv').html("<h2>Game Over</h2>");
 
 	$('#resultDiv').append("<h2>Correct Answers: " + wins + "</h2>")
 	$('#resultDiv').append("<h2>Incorrect Answers: " + losses + "</h2>");
