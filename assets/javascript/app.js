@@ -11,7 +11,7 @@ var game = [
 		"36,000", 
 		"25,000"],
 	correctAnswer: 0,
-	explanation: "Just over 50,000 students attend UT Austin.  With all these young people and a population that loves the outdodors, Austin is noted as one of the fittest cities in America."
+	explanation: "Just over 50,000 students attend UT Austin.  With all these students and a population that loves the outdodors, Austin is noted as one of the fittest cities in America."
 	},
 	{question: "How many visitors make their way to Austin each year?",
 	possibleAnswers: [
@@ -19,17 +19,44 @@ var game = [
 		"17 million", 
 		"14 million", 
 		"10 million"],
-	correctAnswer: 1,
-	explanation: "More than 17 million visitors make their way to Austin each year.  "
+	correctAnswer: 0,
+	explanation: "In 2015, more than 22 million visitors made their way to Austin.  Their spending had an economic impact on Austin of more than $6.7 Billion.  "
 	},	
-	{question: "As far as food events go, which event held in Austin is America's second largest such festival?",
+	{question: "As far as food events go, which event held in Austin holds national recognition?",
 	possibleAnswers: [
 		"The Texas Organic Food Festival", 
-		"The Hill Country Wine & Food Festival", 
+		"Austin Food and Wine Festival", 
 		"The Great American Rib & Steak Barbecue Festival", 
 		"Austin Chili Cook-off"],
 	correctAnswer: 1,
-	explanation: "The Hill Country Wine & Food Festival is the biggest such event, second only to Aspen.  This event focuses on promoting food and wine with a Texas flair."
+	explanation: "The Austin Food and Wine Festival made Fodor's list of North America's 15 Best Food Festivals, and Travel Channel's list of Best Food and Wine Festivals."
+	},
+	{question: "What is a tourist attraction in Austin that is the only one of its kind in the world still in operation?",
+	possibleAnswers: [
+		"Moonlight Towers",
+		"Cedar Creek Hardwood Dam",
+		"Congress Avenue Steam Powered Drawbridge",
+		"Armadillo Trolley Cars"],
+	correctAnswer:  0,
+	explanation: "In 1894, the city of Austin purchased 31 moonlight towers from the city of Detroit, 13 of which are still in operation.  Austin is the only city still to have this form of lighting, and each of the 165-foot tall towers lights up a 1,500-foot radius from dusk to dawn."
+	},
+	{question: "What is another name that Austin is known by?",
+	possibleAnswers: [
+		"Rodeo Capital of North America",
+		"Live Music Capital of the World",
+		"The Adam's Rib of Barbeque",
+		"That Weird Place"],
+	correctAnswer:  1,
+	explanation: "The slogan became official in 1991, after it was discovered that Austin had more live music venues per capita than anywhere else in the nation. More than 1,900 bands and performing artists live in and around Austin."
+	},
+	{question: "What is the population of Austin proper?",
+	possibleAnswers: [
+		"2 million",
+		"1.5 million",
+		"900,000",
+		"750,000"],
+	correctAnswer:  2,
+	explanation: "The population of the city of Austin is expected to hit 1 million in 2020.  As of 2016, the population of the Austin metro area surpassed 2 million."
 	}
 	];
 //=======================================
